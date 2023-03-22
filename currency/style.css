@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the BTC value container */
+  #btc-value-container {
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  #btc-value-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #btc-value-container p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  #btc-value-container input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #btc-value-container button {
+    font-size: 18px;
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the currency exchange rate container */
+  #currency-exchange-rate-container {
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  #currency-exchange-rate-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #currency-exchange-rate-container p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  #currency-exchange-rate-container label {
+    font-size: 18px;
+  }
+  
+  #currency-exchange-rate-container input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #currency-exchange-rate-container button {
+    font-size: 18px;
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
