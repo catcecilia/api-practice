@@ -1,0 +1,33 @@
+body {
+    background-color: #1c110a;
+    color: #50A2A7;
+}
+#container, h1 {
+    text-align: center;
+}
+#container{
+    background-color: #9b2915;
+    color: #e9b44c;
+    border-radius: 12px;
+}
+
+button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #e4d6a7;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+}
+
+button:hover{
+    background-color: #e9b44c;
+}
+h2{
+    padding-top: 2%;
+}
+
+img {
+    width: 20%;
+    margin: 0;
+}

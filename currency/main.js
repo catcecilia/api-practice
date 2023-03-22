@@ -5,19 +5,24 @@ const exchangeValue = document.getElementById("currency-exchange");
 
 btcButton.addEventListener("click", (e)=>{
     e.preventDefault();
-    const origin = document.getElementById("currency0").value;
+    let origin = document.getElementById("currency0").value;
+    origin = String(origin).toLowerCase();
+
     fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${origin}/btc.json`)
     .then(res => res.json())
-    .then(obj => btcValue.innerText = `1 ${origin} is ${obj.btc} BTC as of ${obj.date}`)
-    .catch(err => btcValue.innerText = '${origin} is not a currency');
+    .then(obj => btcValue.innerText = `1 ${origin.toUpperCase()} is ${obj.btc} BTC as of ${obj.date}`)
+    .catch(err => btcValue.innerText = `${origin.toUpperCase()} is not a currency`);
 });
 
 exchangeButton.addEventListener("click", (e) =>{
     e.preventDefault();
-    const home = document.getElementById("currency1").value;
-    const destination = document.getElementById("currency2").value;
+    let home = document.getElementById("currency1").value;
+    home = String(home).toLowerCase();
+    let destination = document.getElementById("currency2").value;
+    destination = String(destination).toLowerCase();
+
     fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${home}/${destination}.json`)
     .then(res => res.json())
-    .then(obj => exchangeValue.innerText = `1 ${home} is ${obj[destination]} ${destination} as of ${obj.date}`)
+    .then(obj => exchangeValue.innerText = `1 ${home.toUpperCase()} is ${obj[destination]} ${destination.toUpperCase()} as of ${obj.date}`)
     .catch(err => exchangeValue.innerText = 'Currency (or currencies) not found');
 });
