@@ -1,0 +1,37 @@
+/* body background */
+body {
+    background-color: #c5d86d;
+  }
+  
+  /* navbar */
+  .navbar {
+    background-color: #2e294e;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  /* random joke section */
+  .btn-primary {
+    background-color: #f46036;
+    border-color: #f46036;
+  }
+  
+  /* joke categories section */
+  .category-button {
+    background-color: #1b998b;
+    border-color: #1b998b;
+    margin-bottom: 2%;
+  }
+  
+  /* joke section */
+  #category-joke, #random-joke {
+    color: #2e294e;
+    padding: 5% 0 5% 0;
+  }
+  
+
+  #random-joke-button {
+    margin-bottom: 5%;
+  }
